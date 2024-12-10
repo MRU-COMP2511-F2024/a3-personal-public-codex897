@@ -1,0 +1,141 @@
+article{
+    border-radius: 0cm;
+}
+
+#skip{
+    position:absolute;
+    top:-10000px;
+    width:1px;
+    height:1px;
+}
+
+#skip a:focus{
+    top:0px;
+    width:auto;
+    height:auto;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+th{
+    background-color: lightgray;
+}
+.striped{
+    background-color: lightgray;
+}
+figure img{
+    width:250px;
+    height:250px;
+}
+input[placeholder]{
+    background-color: lightgray;
+}
+
+form{
+    border-bottom-style:double;
+    border-top-style:double;
+    border-right-style:double;
+    border-left-style:double;
+    width:45%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form * {
+    margin-bottom: 2px; 
+}
+
+input.text:focus{
+    background-color: aquamarine;
+    color:black;
+}
+
+input[type="radio"]:focus + label,
+input[type="checkbox"]:focus + label {
+    background-color: aquamarine;
+    color:black;
+}
+
+select:focus {
+    background-color: aquamarine;
+    color:black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px;
+    padding: 20px; 
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
+footer{
+    background-color: white;
+}
+
+#refer {
+    background-color: #fa2c03;
+}
+
+@media screen and (max-width: 790px) {
+    form{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    .grid-container {
+        display: block; 
+    }
+
+    figure img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    form {
+        width: 100%;
+    }
+
+    table {
+        width: 100%; 
+    }
+
+    body, footer{
+        font-size: 90%; 
+    }
+
+    h1 {
+        font-size: 5.9vw;
+    }
+    h2 {
+        font-size: 3.0vh;
+    }
+    p {
+        font-size: 2vmin;
+    }
+
+    p, table, th, td, input, form, .grid-item {
+        font-size: 0.9em; 
+    }
+
+    .grid-item {
+        margin-bottom: 20px; 
+    }
+}

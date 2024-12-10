@@ -1,0 +1,120 @@
+p::first-letter {
+    font-size: 2em;
+    color:#fa2c03;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+.carousel-control-prev {
+    color: rgba(15, 15, 18, 0.886); /* Blue with transparency */
+    border-radius: 50%; /* Optional: Makes it circular */
+  }
+.cre
+  /* Change the color of the Next button */
+  .carousel-control-next {
+    color: rgba(8, 10, 12, 0.961); /* Red with transparency */
+    border-radius: 50%; /* Optional: Makes it circular */
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: rgb(14, 24, 220); /* Change color on hover */
+    text-decoration: none; /* Prevent underlining on hover */
+  }
+figure{
+    width:250px;
+    height:250px;
+    float:none;
+    margin: 0 auto; /* Center the figure horizontally */
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+figure img{
+    width:250px;
+    height:250px;
+    float:center;
+    margin:0;
+}
+
+figcaption{
+    float:center;
+    margin:0;
+}
+footer p::first-letter {
+    color: inherit; 
+    font-size: inherit; 
+    font-weight: inherit; 
+    font-family: inherit;
+}
+p{
+    margin-bottom: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px;
+    padding: 0px; 
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+@media screen and (max-width: 590px) {
+    /* Adjusting layout for small devices */
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "article1"
+            "article2"
+            "aside";
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    form {
+        width: 100%; /* Form takes full width */
+    }
+
+    table {
+        width: 100%; /* Table takes full width */
+    }
+
+    body {
+        font-size: 90%; /* Reduces the base font size */
+    }
+
+    /* Adjust headers */
+    h1 {
+        font-size: 5.9vw;
+    }
+    h2 {
+        font-size: 3.0vh;
+    }
+     footer p{
+        font-size: 2vmin;
+        margin-bottom: 0%;
+    }
+    /* Adjust specific elements if needed */
+    p, table, th, td, input, form, .grid-item {
+        font-size: 0.9em; /* Reduce text size to 90% of default */
+    }
+
+    .grid-item {
+        display: block;
+        margin-bottom: 20px; /* Adds spacing between items */
+    }
+    #logo
+    header {
+        display: header;
+        text-align: center;
+        flex-direction: column;
+    }
+    header ul{
+        display: none;
+    }
+
+    
+}
